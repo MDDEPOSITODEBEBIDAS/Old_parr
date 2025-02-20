@@ -1,0 +1,333 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: white;
+}
+@font-face {
+    font-family: 'HAHA';
+    src: url('Basteleur-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PP';
+    src: url('Qualiyun.ttf') format('truetype');
+}
+.pading{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+.user1{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+header{
+    font-family: 'HAHA';
+    font-size: 12px;
+    padding-top: 60px;
+    justify-content: center;
+    
+    align-items: center;
+    flex-direction: column;
+    height: 40px;
+    display: flex;
+    width: 100%;
+}
+.Old{
+    font-family: 'HAHA';
+}
+body{
+    height: 100vh;
+    background-image: radial-gradient(circle, #7f3d9e, #6d00d9);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    width: 140px;
+    transform: rotate(-30deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pai{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+    
+}
+.shadow {
+    margin-left: 60px;
+    position: absolute;
+    top: 320px; /* Posiciona a sombra no topo da imagem */
+    width: 220px; /* Largura da sombra */
+    height: 20px; /* Altura da sombra */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    filter: blur(7px); /* Suaviza a sombra */
+    z-index: -1; /* Deixa atrás da imagem */
+}
+.tx{
+    font-family: 'PP', sans-serif !important;
+    gap: 15px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+.ttt{
+    padding-right: 130px;
+}
+
+.flinha {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flinha img {
+    position: relative;
+    z-index: 2; /* Mantém a imagem sobre os outros elementos */
+}
+
+.linha {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; /* Garante que a linha fique abaixo da imagem */
+}
+
+.linha i {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.linha i:first-child {
+    left: -39px; /* Move o ícone da esquerda para fora */
+}
+
+.linha i:last-child {
+    right: -39px; /* Move o ícone da direita para fora */
+}
+
+.fa-solid.fa-arrow-left, 
+.fa-solid.fa-arrow-right {
+    color: white;
+    font-size: 30px; /* Aumenta o tamanho do ícone */
+}
+
+
+.img-pk {
+    width: 110px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transform: translateX(-100px) rotate(0deg);
+    animation: enterAndRotate 0.8s ease-out forwards; /* Reduzi o tempo total para 0.8s */
+}
+
+/* Animação ajustada */
+@keyframes enterAndRotate {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) rotate(0deg);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(-30deg);
+    }
+}
+
+.oiii {
+    animation-delay: 1s; /* Adiciona 1 segundo de delay */
+}
+
+
+.provas{
+    font-family: 'PP';
+    background-image: radial-gradient(circle, #7f3d9e, #6d00d9);
+    min-height: 100vh;
+    width: 100%;
+    
+    
+}
+.users{
+    display: flex;
+    padding: 40px;
+
+    
+}
+.users1{
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.fotinhas{
+    width: 100px;
+}
+
+
+.carrinho-fixo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.carrinho-fixo .info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade button {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 18px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.quantidade button:hover {
+    background-color: #ff9900;
+}
+
+#quantidade {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botao-comprar {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #ff9900;
+}
+
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #ff9900;
+}
+
+.selo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.parcerias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parceria-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.parceria-item img {
+    width: 60px;
+    border-radius: 5px;
+}
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

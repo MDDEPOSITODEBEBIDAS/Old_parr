@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fundo e centralização */
+  body {
+    background: radial-gradient(circle, #7f3d9e, #6d00d9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Container do carrinho */
+  .carrinho-container {
+    background: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Títulos */
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Produto */
+  .produto {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .produto img {
+    width: 80px;
+    border-radius: 5px;
+  }
+  
+  .produto-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .produto-info p {
+    margin-bottom: 5px;
+  }
+  
+  /* Quantidade */
+  .quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .quantidade button {
+    background: #ffcc00;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .quantidade button:hover {
+    background: #ff9900;
+  }
+  
+  .quantidade .quantidade-numero {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Formulário de Endereço */
+  #enderecoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #enderecoForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Frete grátis */
+  .frete-gratis {
+    text-align: center;
+    font-size: 16px;
+    color: green;
+    margin-bottom: 15px;
+  }
+  
+  /* Botão Finalizar Compra */
+  .btn-finalizar {
+    display: block;
+    width: 100%;
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-finalizar:hover {
+    background: #1e7e34;
+  }
+  
+
+
+
+
+
+

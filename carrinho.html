@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="carrinho-container">
+    <h2>Finalizar Compra de <span id="quantidadeFinal">1</span> garrafa(s)</h2>
+
+    <div class="produto">
+      <img src="img/1 L.png" alt="Old Par 1L">
+      <div class="produto-info">
+        <h3>Old Par 1L + 750ml Grátis</h3>
+        <p>Preço unitário: R$ <span id="precoUnitario">99.99</span></p>
+       
+        <p>Total: R$ <span id="precoTotal">99.99</span></p>
+      </div>
+    </div>
+
+    <h3>Endereço de Entrega</h3>
+    <form id="enderecoForm">
+      <input type="text" id="rua" placeholder="Rua" required>
+      <input type="text" id="cidade" placeholder="Cidade" required>
+      <input type="text" id="estado" placeholder="Estado" required>
+      <input type="text" id="cep" placeholder="CEP" required>
+    </form>
+
+    <p class="frete-gratis">✅ Frete Grátis</p>
+
+    <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+  </div>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
+
+
