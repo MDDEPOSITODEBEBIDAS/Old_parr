@@ -4,6 +4,9 @@
     box-sizing: border-box; 
     color: white;
 }
+html, body {
+    overflow-x: hidden;
+}
 @font-face {
     font-family: 'HAHA';
     src: url('Basteleur-Bold.ttf') format('truetype');
